@@ -1,0 +1,56 @@
+*{
+    background-color: gray;
+    color: #ffffff;
+    justify-items: center;
+    margin: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#wrapper{
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.484);
+    border: 5px solid black;
+    border-radius: 4px;
+    display: inline-block;
+    height: 530px;
+    width: 430px;
+}
+h1{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    background-color: black;
+}
+label{
+    font-size: 30px;
+}
+input{
+    margin: 10px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 170px;
+    cursor: pointer;
+}
+button{
+    height: 35px;
+    cursor: pointer;
+    border: 2px solid black;
+    margin-left: 50px;
+    background-color: black;
+    border-radius: 5px;
+    width: 90px;
+    font-size: 20px;
+}
+.resultParass{
+    font-size: 18px;
+}
+.st {
+    margin: 40px;
+}
+.lowOrHigh{
+    cursor: pointer;
+}
