@@ -1,56 +1,113 @@
-*{
-    background-color: gray;
-    color: #ffffff;
-    justify-items: center;
-    margin: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-}
-#wrapper{
-    justify-items: center;
-    align-items: center;
-    background-color: rgba(128, 128, 128, 0.484);
-    border: 5px solid black;
-    border-radius: 4px;
-    display: inline-block;
-    height: 530px;
-    width: 430px;
-}
-h1{
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* DEFAULT – DARK MODE */
+body {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    width: 100%;
-    
-    background-color: black;
+    align-items: center;
+    background: #121212;
+    color: #f1f1f1;
 }
-label{
-    font-size: 30px;
+
+#wrapper {
+    width: 420px;
+    background: #1e1e1e;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    text-align: center;
 }
-input{
-    margin: 10px;
-    height: 20px;
-    border: 2px solid black;
-    border-radius: 5px;
-    width: 170px;
+
+h1 {
+    background: #000;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+/* Toggle Button */
+#themeToggle {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
     cursor: pointer;
+    margin-bottom: 18px;
 }
-button{
-    height: 35px;
+
+#themeToggle:hover {
+    background: #333;
+}
+
+/* Input */
+input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #2a2a2a;
+    color: #fff;
+}
+
+/* Button */
+button {
+    margin-top: 16px;
+    padding: 9px 22px;
+    border-radius: 20px;
+    border: none;
     cursor: pointer;
-    border: 2px solid black;
-    margin-left: 50px;
-    background-color: black;
-    border-radius: 5px;
-    width: 90px;
-    font-size: 20px;
+    background: #444;
+    color: #fff;
 }
-.resultParass{
-    font-size: 18px;
+
+button:hover {
+    background: #555;
 }
-.st {
-    margin: 40px;
+
+.resultParass {
+    margin-top: 20px;
 }
-.lowOrHigh{
-    cursor: pointer;
+
+/* ---------- LIGHT MODE ---------- */
+body.light {
+    background: #f4f6fb;
+    color: #111;
+}
+
+body.light #wrapper {
+    background: #ffffff;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+body.light h1 {
+    background: #eee;
+}
+
+body.light input {
+    background: #f0f0f0;
+    color: #111;
+}
+
+body.light button {
+    background: #ddd;
+    color: #111;
+}
+
+body.light #themeToggle {
+    background: #eee;
+    color: #111;
+    border-color: #ccc;
 }
